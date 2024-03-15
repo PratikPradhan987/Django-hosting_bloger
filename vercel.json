@@ -9,5 +9,10 @@
             "src": "/(.*)",
             "dest": "blog/wsgi.py"
         }
-    ]
+    ],
+    "functions": {
+        "api/**/*.py": {
+          "runtime": "python3.9"
+        }
+     }
 }

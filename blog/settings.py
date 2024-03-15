@@ -73,7 +73,17 @@ WSGI_APPLICATION = 'vercel_app.wsgi.app'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': "django.db.backends.postgresql_psycopg2"
+#         'HOST': os.environ['HOST'],
+#         'NAME': os.environ['NAME'],
+#         'USER': os.environ['USER'],
+#         'PASSWORD': os.environ['PASSWORD'],
+#         'PORT': os.environ['PORT'],
+
+#     }
+# }
 
 
 # Password validation

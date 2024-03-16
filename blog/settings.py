@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-k+tz7uyvii^!wx&t8uye1!2mqab7bt)n!_=)&zx7z-+pa8^n-#"
+SECRET_KEY = "django-insecure-x8@c9@2)vqx@0+kir79vk2ez_fua+&u9)!fb*4h-6gbmtndu-9"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'blogs',
 ]
 
 MIDDLEWARE = [
@@ -73,17 +72,12 @@ WSGI_APPLICATION = 'blog.wsgi.app'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': "django.db.backends.postgresql_psycopg2"
-#         'HOST': os.environ['HOST'],
-#         'NAME': os.environ['NAME'],
-#         'USER': os.environ['USER'],
-#         'PASSWORD': os.environ['PASSWORD'],
-#         'PORT': os.environ['PORT'],
-
-#     }
-# }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
 
 
 # Password validation
@@ -104,7 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# dsf
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 

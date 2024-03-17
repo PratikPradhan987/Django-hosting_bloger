@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="w-full bg-white">
+    <section>
+        <div class="flex justify-between px-10 py-5 text-4xl">
+            <div>  
+                <p class="text-black font-bold text-xl">Welcome to the Doc</p>
+          </div>
+          <div class="flex gap-5">
+            <div><a href="/sign_up">
+              <button class="btn btn-active btn-neutral">sign up</button>
+            </a>
+            </div>
+            <div>
+                <a href="/login">
+              <button class="btn btn-active btn-neutral">login</button>
+            </a>
+            </div>
+            <a href="/logout">logout</a>
+          </div>
+        </div>
+      </section>
+      <div>
+        <p class=" text-xl">    
+            path("landing_page/"),          
+        </p>
+        <p class=" text-xl"> path("logout/" ),   </p>
+        <p class=" text-xl"> 
+            path("login/"),    </p>
+            <p class=" text-xl">
+                path("sign_up/"),  </p>
+      </div>
+</div>
+
+{% endblock content %}
+

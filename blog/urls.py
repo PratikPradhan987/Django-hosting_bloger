@@ -17,8 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from blogs.views import *
+from welcome.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("",landing_page ),    
+    path("landing_page/",landing_page ),    
+    path("", homepage ),    
+    path("logout/", logout_page ),    
+    path("login/", login_page ),    
+    path("sign_up/", sign_up ),    
+
 ]

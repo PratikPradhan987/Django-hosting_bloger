@@ -26,5 +26,7 @@ urlpatterns = [
     path("logout/", logout_page ),    
     path("login/", login_page ),    
     path("sign_up/", sign_up ),    
+    path("portpage/", portpage ),    
+
 
 ]

@@ -7,6 +7,10 @@ from django.contrib import messages
 def homepage(request):
     return render(request, 'home.html')
 
+def portpage(request):
+    return render(request, 'portfolio.html')
+
+
 def sign_up(request):
     if request.method == "POST":
         first_name = request.POST.get('first_name')

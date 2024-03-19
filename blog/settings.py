@@ -75,7 +75,20 @@ WSGI_APPLICATION = 'blog.wsgi.app'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3', # Use the SQLite engine as a placeholder
+        'NAME': 'my_django_db',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+        'OPTIONS': {
+            'database_url': 'libsql://my_django_db-<your-github-username>.turso.io', # Replace with your actual database URL
+            'auth_token': '<your-auth-token>', # Replace with your actual auth token
+        },
+    }
 }
+
 
 
 # Password validation

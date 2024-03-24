@@ -22,7 +22,7 @@ from welcome.views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("landing_page/",landing_page ),    
-    path("", homepage ),    
+    path("home/", homepage ),    
     path("logout/", logout_page ),    
     path("login/", login_page ),    
     path("sign_up/", sign_up ),    

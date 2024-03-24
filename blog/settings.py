@@ -11,6 +11,17 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+if not os.environ['REPLICATE_API_TOKEN']:
+    raise Exception('REPLICATE_API_TOKEN not set. Have you added it to your .env file at "core/.env" ?')
+
+if not os.environ['WEBHOOK_URL']:
+    raise Exception('WEBHOOK_URL not set. Have you added it to your .env file at "core/.env" ?')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -132,3 +143,4 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+

@@ -27,6 +27,5 @@ urlpatterns = [
     path("login/", login_page ),    
     path("sign_up/", sign_up ),    
     path("portpage/", portpage ),    
-
-
+    path('', include('sim.urls')),
 ]
